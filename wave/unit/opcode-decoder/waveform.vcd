@@ -1,0 +1,192 @@
+$date
+  Sat Sep 19 18:56:59 2026
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module textio $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module tb_opcode_decoder $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 4 # data_bus[3:0] $end
+$var reg 7 $ t_in[6:0] $end
+$var reg 1 % inc_pc $end
+$var reg 1 & en_mem_bus $end
+$var reg 1 ' load_a $end
+$var reg 1 ( en_a_bus $end
+$var reg 1 ) load_b $end
+$var reg 1 * en_sub $end
+$var reg 1 + en_alu_bus $end
+$var reg 1 , step_lfsr $end
+$var reg 1 - en_lfsr_bus $end
+$var reg 1 . hlt $end
+$var reg 4 / op_out[3:0] $end
+$var reg 1 0 sim_end $end
+$scope module uut $end
+$var reg 1 1 clk $end
+$var reg 1 2 rst $end
+$var reg 4 3 data_bus[3:0] $end
+$var reg 7 4 t_in[6:0] $end
+$var reg 1 5 inc_pc $end
+$var reg 1 6 en_mem_bus $end
+$var reg 1 7 load_a $end
+$var reg 1 8 en_a_bus $end
+$var reg 1 9 load_b $end
+$var reg 1 : en_sub $end
+$var reg 1 ; en_alu_bus $end
+$var reg 1 < step_lfsr $end
+$var reg 1 = en_lfsr_bus $end
+$var reg 1 > hlt $end
+$var reg 4 ? op_out[3:0] $end
+$var reg 4 @ ir_reg[3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+1"
+b0000 #
+b0000001 $
+0%
+1&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+b0000 /
+00
+01
+12
+b0000 3
+b0000001 4
+05
+16
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+b0000 ?
+b0000 @
+#10000000
+1!
+11
+#20000000
+0!
+01
+#30000000
+1!
+11
+#40000000
+0!
+0"
+01
+02
+#50000000
+1!
+11
+#60000000
+0!
+b0010 #
+01
+b0010 3
+#65000000
+#70000000
+1!
+b0010 /
+11
+16
+b0010 ?
+b0010 @
+#71000000
+b0000010 $
+1%
+0&
+b0000010 4
+15
+06
+#76000000
+b0000100 $
+0%
+1'
+1+
+b0000100 4
+05
+17
+1;
+#80000000
+0!
+01
+#81000000
+b0011 #
+b0000001 $
+1&
+0'
+0+
+b0011 3
+b0000001 4
+16
+07
+0;
+#90000000
+1!
+b0000100 $
+0&
+1'
+1*
+1+
+b0011 /
+11
+b0000100 4
+06
+17
+1:
+1;
+b0011 ?
+b0011 @
+#95000000
+b1111 #
+b0000001 $
+1&
+0'
+0*
+0+
+b1111 3
+b0000001 4
+16
+07
+0:
+0;
+#100000000
+0!
+01
+#110000000
+1!
+b0000100 $
+0&
+1.
+b1111 /
+11
+b0000100 4
+06
+1>
+b1111 ?
+b1111 @
+#115000000
+10
+#120000000
