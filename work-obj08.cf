@@ -1,0 +1,7 @@
+v 4
+file . "tb/unit/clock/tb_clock.vhd" "922c23e1b93fbbfc526e9a6be9e83726a4d09f44" "20260919083148.293":
+  entity tb_clock at 1( 0) + 0 on 13;
+  architecture sim of tb_clock at 7( 85) + 0 on 14;
+file . "src/clock/clock.vhd" "f36054b2fcc392de745bddb883def399323823cf" "20260919083148.291":
+  entity clock at 1( 0) + 0 on 11;
+  architecture behavioral of clock at 13( 355) + 0 on 12;
