@@ -1,0 +1,149 @@
+$date
+  Sat Sep 19 16:11:11 2026
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module textio $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module tb_memory $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 4 # addr[3:0] $end
+$var reg 1 $ write_en $end
+$var reg 1 % en_mem_bus $end
+$var reg 4 & data_bus[3:0] $end
+$var reg 4 ' mem_out[3:0] $end
+$var reg 4 ( tb_drive_bus[3:0] $end
+$var reg 1 ) sim_end $end
+$scope module uut $end
+$var reg 1 * clk $end
+$var reg 1 + rst $end
+$var reg 4 , addr[3:0] $end
+$var reg 1 - write_en $end
+$var reg 1 . en_mem_bus $end
+$var reg 4 / data_bus[3:0] $end
+$var reg 4 0 mem_out[3:0] $end
+$comment ram is not handled $end
+$var reg 4 1 current_data[3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+1"
+b0000 #
+0$
+0%
+bZZZZ &
+b0001 '
+bZZZZ (
+0)
+0*
+1+
+b0000 ,
+0-
+0.
+bZZZZ /
+b0001 0
+b0001 1
+#10000000
+1!
+1*
+#20000000
+0!
+0*
+#30000000
+1!
+1*
+#40000000
+0!
+0"
+0*
+0+
+#50000000
+1!
+1*
+#60000000
+0!
+0*
+#65000000
+b0001 #
+b0010 '
+b0001 ,
+b0010 0
+b0010 1
+#70000000
+1!
+b1001 #
+b0101 '
+1*
+b1001 ,
+b0101 0
+b0101 1
+#75000000
+b0010 #
+b0100 '
+b0010 ,
+b0100 0
+b0100 1
+#80000000
+0!
+0*
+#85000000
+1%
+b0100 &
+1.
+b0100 /
+#90000000
+1!
+1*
+#95000000
+0%
+bZZZZ &
+0.
+bZZZZ /
+#100000000
+0!
+0*
+#105000000
+#110000000
+1!
+1*
+#120000000
+0!
+b0011 #
+1$
+b1011 &
+b1000 '
+b1011 (
+0*
+b0011 ,
+1-
+b1011 /
+b1000 0
+b1000 1
+#130000000
+1!
+b1011 '
+1*
+b1011 0
+b1011 1
+#131000000
+0$
+bZZZZ &
+bZZZZ (
+0-
+bZZZZ /
+#136000000
+1)
+#140000000
