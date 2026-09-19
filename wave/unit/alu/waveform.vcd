@@ -1,0 +1,107 @@
+$date
+  Sat Sep 19 16:04:44 2026
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module textio $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module tb_alu $end
+$var reg 4 ! a_in[3:0] $end
+$var reg 4 " b_in[3:0] $end
+$var reg 1 # en_sub $end
+$var reg 1 $ en_alu_bus $end
+$var reg 4 % data_bus[3:0] $end
+$var reg 4 & alu_out[3:0] $end
+$var reg 1 ' carry_out $end
+$scope module uut $end
+$var reg 4 ( a_in[3:0] $end
+$var reg 4 ) b_in[3:0] $end
+$var reg 1 * en_sub $end
+$var reg 1 + en_alu_bus $end
+$var reg 4 , data_bus[3:0] $end
+$var reg 4 - alu_out[3:0] $end
+$var reg 1 . carry_out $end
+$var reg 5 / res_ext[4:0] $end
+$var reg 4 0 result[3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0011 !
+b0100 "
+0#
+0$
+bZZZZ %
+b0111 &
+0'
+b0011 (
+b0100 )
+0*
+0+
+bZZZZ ,
+b0111 -
+0.
+b00111 /
+b0111 0
+#10000000
+b1001 !
+b1000 "
+b0001 &
+1'
+b1001 (
+b1000 )
+b0001 -
+1.
+b10001 /
+b0001 0
+#20000000
+b0100 "
+1#
+b0101 &
+b0100 )
+1*
+b0101 -
+b10101 /
+b0101 0
+#30000000
+b0011 !
+b0101 "
+b1110 &
+0'
+b0011 (
+b0101 )
+b1110 -
+0.
+b01110 /
+b1110 0
+#40000000
+b0010 !
+b0011 "
+0#
+1$
+b0101 %
+b0101 &
+b0010 (
+b0011 )
+0*
+1+
+b0101 ,
+b0101 -
+b00101 /
+b0101 0
+#50000000
+0$
+bZZZZ %
+0+
+bZZZZ ,
+#60000000
