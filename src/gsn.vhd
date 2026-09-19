@@ -51,7 +51,7 @@ begin
     -- 1. Clock Module
     clock_inst: entity work.clock
         port map (
-            clk_in  => clk_in,
+            clk_in  => clk_in, -- 0
             rst     => rst,
             hlt     => hlt,
             clk_out => clk_sys
@@ -60,7 +60,7 @@ begin
     -- 2. Program Counter
     pc_inst: entity work.program_counter
         port map (
-            clk    => clk_sys,
+            clk    => clk_sys, -- 0
             rst    => rst,
             inc    => inc_pc,
             pc_out => pc_val
@@ -79,7 +79,7 @@ begin
         port map (
             clk        => clk_sys,
             rst        => rst,
-            addr       => pc_val,
+            addr       => pc_val, -- this causes that each fetch from the memory will be dependent on the current pc value (not practical)
             write_en   => '0',
             en_mem_bus => en_mem_bus,
             data_bus   => data_bus,
