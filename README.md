@@ -1,7 +1,7 @@
 # Global Science Network 477 : 4-bit Computer Implementation
 
 ## Brief Intro
-A Custom GSN477, a complete 4-bit, micro-instructed CPU designed in VHDL, featuring a modular architecture with a gated clock generator, program counter, ring-counter state sequencer, multi-register file (Accumulators A and B), custom Arithmetic Logic Unit (ALU), Linear Feedback Shift Register (LFSR) for pseudorandom generation, RAM unit, and a framebuffer decoder fgior ANSI character visual output. Connected via a central 4-bit tri-state system bus and orchestrated by an opcode decoder matrix, the processor safely sequences multi-cycle instructions ($T_1$–$T_7$) and includes a terminal-based visual testbench for real-time execution tracing and system verification.
+A Custom GSN477, a complete 4-bit, micro-instructed CPU designed in VHDL, featuring a modular architecture with a gated clock generator, program counter, ring-counter state sequencer, multi-register file (Accumulators A and B), custom Arithmetic Logic Unit (ALU), Linear Feedback Shift Register (LFSR) for pseudorandom generation, RAM unit, and a framebuffer decoder fgior ANSI character visual output. Connected via a central 4-bit tri-state system bus and orchestrated by an opcode decoder matrix, the processor safely sequences multi-cycle instructions ($T_1$–$T_7$) and includes a terminal-based visual testbench for real-time execution tracing and system verification. Iam sourcing this from Global Science Network, so I have my gratitude for his ingenuinity.
 
 ## Architecture
 
@@ -115,6 +115,21 @@ gtkwave wave/system/waveform.vcd
 
 ![System Testbench Wave](docs/system-testbench-wave.png)
 
+## Further Explanation
+1. Why can't I program with separate instruction and data, rather than using the opcode of the instruction itself as the data?
+> OK. It's fair enough that it is my bad as I am implementing this, I realized at building the systems part that the I can't write data into my program as there is no memory to store the data. Thus, further improvement is to implement a instruction register (in the architecture referring before, it is the same as opcode register). So, I'm sorry and it will be on the list for further improvement.
+2. As per you see in the testbenches, why does the PC won't add up along with fetching the opcode?
+> Basically, my architecture and opcodes supported split the task for fetching the opcode from data bus and then incrementing the PC. You can see the proof below
+```vhdl
+-- Common Fetch Micro-operations:
+-- T1: Memory drives Data Bus (Opcode latch handled in process above)
+if t_in(0) = '1' then
+    en_mem_bus <= '1';
+-- T2: Increment PC to point to next instruction / operand
+elsif t_in(1) = '1' then
+    inc_pc <= '1';
+```
+> So, in T1, we only fetch the opcode from databus after it is being loaded from memory. Then, in T2, we increment the PC, so basically the cycle is 7 step where each second step for each cycle will increment the PC. That is the same reason you see that the changing of PC only occurs in line 2 in the first cycle. (The first cycle is step 1-7 where second step is incrementing the PC)
 
 
 ## Further Improvements
