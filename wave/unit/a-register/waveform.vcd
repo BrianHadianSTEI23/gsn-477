@@ -1,0 +1,123 @@
+$date
+  Sat Sep 19 15:54:14 2026
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module textio $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module tb_a_register $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # load_a $end
+$var reg 1 $ en_a_bus $end
+$var reg 4 % data_bus[3:0] $end
+$var reg 4 & a_out[3:0] $end
+$var reg 4 ' tb_drive_bus[3:0] $end
+$var reg 1 ( sim_end $end
+$scope module uut $end
+$var reg 1 ) clk $end
+$var reg 1 * rst $end
+$var reg 1 + load_a $end
+$var reg 1 , en_a_bus $end
+$var reg 4 - data_bus[3:0] $end
+$var reg 4 . a_out[3:0] $end
+$var reg 4 / reg_val[3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+1"
+0#
+0$
+bZZZZ %
+b0000 &
+bZZZZ '
+0(
+0)
+1*
+0+
+0,
+bZZZZ -
+b0000 .
+b0000 /
+#10000000
+1!
+1)
+#20000000
+0!
+0)
+#30000000
+1!
+1)
+#40000000
+0!
+0"
+0)
+0*
+#50000000
+1!
+1)
+#60000000
+0!
+1#
+b1010 %
+b1010 '
+0)
+1+
+b1010 -
+#70000000
+1!
+b1010 &
+1)
+b1010 .
+b1010 /
+#71000000
+0#
+b1111 %
+b1111 '
+0+
+b1111 -
+#80000000
+0!
+0)
+#90000000
+1!
+1)
+#91000000
+bZZZZ %
+bZZZZ '
+bZZZZ -
+#100000000
+0!
+0)
+#101000000
+1$
+b1010 %
+1,
+b1010 -
+#110000000
+1!
+1)
+#111000000
+0$
+bZZZZ %
+0,
+bZZZZ -
+#120000000
+0!
+0)
+#121000000
+1(
+#130000000
+1!
+1)
+#140000000
