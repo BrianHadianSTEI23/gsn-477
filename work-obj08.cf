@@ -1,61 +1,67 @@
 v 4
-file . "tb/unit/framebuffer_decoder/tb_framebuffer_decoder.vhd" "f0d6870cff558398cdfa28963970c3e3b4bef623" "20260919122100.225":
-  entity tb_framebuffer_decoder at 1( 0) + 0 on 49;
-  architecture sim of tb_framebuffer_decoder at 7( 113) + 0 on 50;
-file . "src/framebuffer_decoder/framebuffer_decoder.vhd" "0e65ccf11d12d2fae6bfb2b9682bb5cd25cda7b9" "20260919122100.223":
-  entity framebuffer_decoder at 1( 0) + 0 on 47;
-  architecture behavioral of framebuffer_decoder at 16( 621) + 0 on 48;
-file . "tb/unit/lfsr/tb_lfsr.vhd" "5b9e3e96867ccb5822cdd401a35249f48e5ba5f9" "20260919093731.159":
-  entity tb_lfsr at 1( 0) + 0 on 41;
-  architecture sim of tb_lfsr at 8( 109) + 0 on 42;
-file . "src/lfsr/lfsr.vhd" "7030dcb6bbd4cc1ee9447647005fcb216fa87518" "20260919093731.156":
-  entity lfsr at 1( 0) + 0 on 39;
-  architecture behavioral of lfsr at 17( 732) + 0 on 40;
-file . "tb/unit/alu/tb_alu.vhd" "399cb30f2af31b8c8778f1cd26025b48543a618f" "20260919090437.960":
-  entity tb_alu at 1( 0) + 0 on 33;
-  architecture sim of tb_alu at 8( 107) + 0 on 34;
-file . "src/alu/alu.vhd" "605d69daa9dcee5ee6b8fb74f6877e9da4684e21" "20260919090437.957":
-  entity alu at 1( 0) + 0 on 31;
-  architecture behavioral of alu at 17( 743) + 0 on 32;
-file . "tb/unit/a_register/tb_a_register.vhd" "6159b3f238beed01170e8b97577cacb85340a85b" "20260919085400.818":
-  entity tb_a_register at 1( 0) + 0 on 25;
-  architecture sim of tb_a_register at 7( 95) + 0 on 26;
-file . "src/a_register/a_register.vhd" "b962f6d60b68c14169f0950139e5ee4f159177db" "20260919085400.816":
-  entity a_register at 1( 0) + 0 on 23;
-  architecture behavioral of a_register at 15( 609) + 0 on 24;
-file . "tb/unit/program_counter/tb_program_counter.vhd" "d311399ff4ce2bbf9c1a12f84d42e020b35a4f83" "20260919084037.925":
-  entity tb_program_counter at 1( 0) + 0 on 17;
-  architecture sim of tb_program_counter at 8( 131) + 0 on 18;
-file . "src/program_counter/program_counter.vhd" "7703d3bd08c3e9010dc02d488dc90517835956e4" "20260919084037.923":
-  entity program_counter at 1( 0) + 0 on 15;
-  architecture behavioral of program_counter at 14( 464) + 0 on 16;
-file . "src/clock/clock.vhd" "f36054b2fcc392de745bddb883def399323823cf" "20260919083148.291":
-  entity clock at 1( 0) + 0 on 11;
-  architecture behavioral of clock at 13( 355) + 0 on 12;
-file . "tb/unit/clock/tb_clock.vhd" "922c23e1b93fbbfc526e9a6be9e83726a4d09f44" "20260919083148.293":
-  entity tb_clock at 1( 0) + 0 on 13;
-  architecture sim of tb_clock at 7( 85) + 0 on 14;
-file . "src/ring_counter/ring_counter.vhd" "1d6cabdacb4b6228a4ea3861200c71fdae1e410e" "20260919084752.189":
-  entity ring_counter at 1( 0) + 0 on 19;
-  architecture behavioral of ring_counter at 12( 350) + 0 on 20;
-file . "tb/unit/ring_counter/tb_ring_counter.vhd" "b8475ee16fc37e758c8f38dc7be45cbc216f6ca2" "20260919084752.193":
-  entity tb_ring_counter at 1( 0) + 0 on 21;
-  architecture sim of tb_ring_counter at 7( 99) + 0 on 22;
-file . "src/b_register/b_register.vhd" "03c6a28a46ae8f69d74ce42d31f95fc914b770a9" "20260919085436.510":
-  entity b_register at 1( 0) + 0 on 27;
-  architecture behavioral of b_register at 14( 509) + 0 on 28;
-file . "tb/unit/b_register/tb_b_register.vhd" "bdb847708ff4a3e381ee13854c662ff8582e486c" "20260919085436.512":
-  entity tb_b_register at 1( 0) + 0 on 29;
-  architecture sim of tb_b_register at 7( 95) + 0 on 30;
-file . "src/memory/memory.vhd" "9817c9690ebbb711ce2f8746ac8ca33896e72304" "20260919091104.912":
-  entity memory at 1( 0) + 0 on 35;
-  architecture behavioral of memory at 17( 741) + 0 on 36;
-file . "tb/unit/memory/tb_memory.vhd" "cce0dac90f66e8ae78fae795157027b0b2b67154" "20260919091104.915":
-  entity tb_memory at 1( 0) + 0 on 37;
-  architecture sim of tb_memory at 8( 113) + 0 on 38;
-file . "src/opcode_decoder/opcode_decoder.vhd" "67111f0d8ab48cbb443dabd456b24876641d5d53" "20260919115654.091":
-  entity opcode_decoder at 1( 0) + 0 on 43;
-  architecture behavioral of opcode_decoder at 26( 1422) + 0 on 44;
+file . "tb/integration/tb_gsn.vhd" "e9e384b377b74308dedf7e7c1da1645d52cf2b60" "20260919123454.536":
+  entity tb_gsn at 1( 0) + 0 on 73;
+  architecture sim of tb_gsn at 7( 81) + 0 on 74;
+file . "src/gsn.vhd" "c342ed4b9db6a564a60b7ce7086780e7334b2d2a" "20260919123454.535":
+  entity gsn at 1( 0) + 0 on 71;
+  architecture structural of gsn at 20( 891) + 0 on 72;
 file . "tb/unit/opcode_decoder/tb_opcode_decoder.vhd" "2c0ed750e5132f20493577f023bdd48978703571" "20260919115654.092":
   entity tb_opcode_decoder at 1( 0) + 0 on 45;
   architecture sim of tb_opcode_decoder at 7( 103) + 0 on 46;
+file . "src/opcode_decoder/opcode_decoder.vhd" "67111f0d8ab48cbb443dabd456b24876641d5d53" "20260919123454.531":
+  entity opcode_decoder at 1( 0) + 0 on 67;
+  architecture behavioral of opcode_decoder at 26( 1422) + 0 on 68;
+file . "tb/unit/memory/tb_memory.vhd" "cce0dac90f66e8ae78fae795157027b0b2b67154" "20260919091104.915":
+  entity tb_memory at 1( 0) + 0 on 37;
+  architecture sim of tb_memory at 8( 113) + 0 on 38;
+file . "src/memory/memory.vhd" "9817c9690ebbb711ce2f8746ac8ca33896e72304" "20260919123454.527":
+  entity memory at 1( 0) + 0 on 63;
+  architecture behavioral of memory at 17( 741) + 0 on 64;
+file . "tb/unit/b_register/tb_b_register.vhd" "bdb847708ff4a3e381ee13854c662ff8582e486c" "20260919085436.512":
+  entity tb_b_register at 1( 0) + 0 on 29;
+  architecture sim of tb_b_register at 7( 95) + 0 on 30;
+file . "src/b_register/b_register.vhd" "03c6a28a46ae8f69d74ce42d31f95fc914b770a9" "20260919123454.522":
+  entity b_register at 1( 0) + 0 on 59;
+  architecture behavioral of b_register at 14( 509) + 0 on 60;
+file . "tb/unit/ring_counter/tb_ring_counter.vhd" "b8475ee16fc37e758c8f38dc7be45cbc216f6ca2" "20260919084752.193":
+  entity tb_ring_counter at 1( 0) + 0 on 21;
+  architecture sim of tb_ring_counter at 7( 99) + 0 on 22;
+file . "src/ring_counter/ring_counter.vhd" "1d6cabdacb4b6228a4ea3861200c71fdae1e410e" "20260919123454.520":
+  entity ring_counter at 1( 0) + 0 on 55;
+  architecture behavioral of ring_counter at 12( 350) + 0 on 56;
+file . "tb/unit/clock/tb_clock.vhd" "922c23e1b93fbbfc526e9a6be9e83726a4d09f44" "20260919083148.293":
+  entity tb_clock at 1( 0) + 0 on 13;
+  architecture sim of tb_clock at 7( 85) + 0 on 14;
+file . "src/clock/clock.vhd" "f36054b2fcc392de745bddb883def399323823cf" "20260919123454.511":
+  entity clock at 1( 0) + 0 on 51;
+  architecture behavioral of clock at 13( 355) + 0 on 52;
+file . "src/program_counter/program_counter.vhd" "7703d3bd08c3e9010dc02d488dc90517835956e4" "20260919123454.518":
+  entity program_counter at 1( 0) + 0 on 53;
+  architecture behavioral of program_counter at 14( 464) + 0 on 54;
+file . "tb/unit/program_counter/tb_program_counter.vhd" "d311399ff4ce2bbf9c1a12f84d42e020b35a4f83" "20260919084037.925":
+  entity tb_program_counter at 1( 0) + 0 on 17;
+  architecture sim of tb_program_counter at 8( 131) + 0 on 18;
+file . "src/a_register/a_register.vhd" "b962f6d60b68c14169f0950139e5ee4f159177db" "20260919123454.521":
+  entity a_register at 1( 0) + 0 on 57;
+  architecture behavioral of a_register at 15( 609) + 0 on 58;
+file . "tb/unit/a_register/tb_a_register.vhd" "6159b3f238beed01170e8b97577cacb85340a85b" "20260919085400.818":
+  entity tb_a_register at 1( 0) + 0 on 25;
+  architecture sim of tb_a_register at 7( 95) + 0 on 26;
+file . "src/alu/alu.vhd" "605d69daa9dcee5ee6b8fb74f6877e9da4684e21" "20260919123454.525":
+  entity alu at 1( 0) + 0 on 61;
+  architecture behavioral of alu at 17( 743) + 0 on 62;
+file . "tb/unit/alu/tb_alu.vhd" "399cb30f2af31b8c8778f1cd26025b48543a618f" "20260919090437.960":
+  entity tb_alu at 1( 0) + 0 on 33;
+  architecture sim of tb_alu at 8( 107) + 0 on 34;
+file . "src/lfsr/lfsr.vhd" "7030dcb6bbd4cc1ee9447647005fcb216fa87518" "20260919123454.529":
+  entity lfsr at 1( 0) + 0 on 65;
+  architecture behavioral of lfsr at 17( 732) + 0 on 66;
+file . "tb/unit/lfsr/tb_lfsr.vhd" "5b9e3e96867ccb5822cdd401a35249f48e5ba5f9" "20260919093731.159":
+  entity tb_lfsr at 1( 0) + 0 on 41;
+  architecture sim of tb_lfsr at 8( 109) + 0 on 42;
+file . "src/framebuffer_decoder/framebuffer_decoder.vhd" "0e65ccf11d12d2fae6bfb2b9682bb5cd25cda7b9" "20260919123454.533":
+  entity framebuffer_decoder at 1( 0) + 0 on 69;
+  architecture behavioral of framebuffer_decoder at 16( 621) + 0 on 70;
+file . "tb/unit/framebuffer_decoder/tb_framebuffer_decoder.vhd" "f0d6870cff558398cdfa28963970c3e3b4bef623" "20260919122100.225":
+  entity tb_framebuffer_decoder at 1( 0) + 0 on 49;
+  architecture sim of tb_framebuffer_decoder at 7( 113) + 0 on 50;
