@@ -1,43 +1,49 @@
 v 4
-file . "tb/unit/memory/tb_memory.vhd" "cce0dac90f66e8ae78fae795157027b0b2b67154" "20260919091104.915":
-  entity tb_memory at 1( 0) + 0 on 37;
-  architecture sim of tb_memory at 8( 113) + 0 on 38;
-file . "src/memory/memory.vhd" "9817c9690ebbb711ce2f8746ac8ca33896e72304" "20260919091104.912":
-  entity memory at 1( 0) + 0 on 35;
-  architecture behavioral of memory at 17( 741) + 0 on 36;
-file . "tb/unit/b_register/tb_b_register.vhd" "bdb847708ff4a3e381ee13854c662ff8582e486c" "20260919085436.512":
-  entity tb_b_register at 1( 0) + 0 on 29;
-  architecture sim of tb_b_register at 7( 95) + 0 on 30;
-file . "src/b_register/b_register.vhd" "03c6a28a46ae8f69d74ce42d31f95fc914b770a9" "20260919085436.510":
-  entity b_register at 1( 0) + 0 on 27;
-  architecture behavioral of b_register at 14( 509) + 0 on 28;
-file . "tb/unit/ring_counter/tb_ring_counter.vhd" "b8475ee16fc37e758c8f38dc7be45cbc216f6ca2" "20260919084752.193":
-  entity tb_ring_counter at 1( 0) + 0 on 21;
-  architecture sim of tb_ring_counter at 7( 99) + 0 on 22;
-file . "src/ring_counter/ring_counter.vhd" "1d6cabdacb4b6228a4ea3861200c71fdae1e410e" "20260919084752.189":
-  entity ring_counter at 1( 0) + 0 on 19;
-  architecture behavioral of ring_counter at 12( 350) + 0 on 20;
-file . "tb/unit/clock/tb_clock.vhd" "922c23e1b93fbbfc526e9a6be9e83726a4d09f44" "20260919083148.293":
-  entity tb_clock at 1( 0) + 0 on 13;
-  architecture sim of tb_clock at 7( 85) + 0 on 14;
-file . "src/clock/clock.vhd" "f36054b2fcc392de745bddb883def399323823cf" "20260919083148.291":
-  entity clock at 1( 0) + 0 on 11;
-  architecture behavioral of clock at 13( 355) + 0 on 12;
-file . "src/program_counter/program_counter.vhd" "7703d3bd08c3e9010dc02d488dc90517835956e4" "20260919084037.923":
-  entity program_counter at 1( 0) + 0 on 15;
-  architecture behavioral of program_counter at 14( 464) + 0 on 16;
-file . "tb/unit/program_counter/tb_program_counter.vhd" "d311399ff4ce2bbf9c1a12f84d42e020b35a4f83" "20260919084037.925":
-  entity tb_program_counter at 1( 0) + 0 on 17;
-  architecture sim of tb_program_counter at 8( 131) + 0 on 18;
-file . "src/a_register/a_register.vhd" "b962f6d60b68c14169f0950139e5ee4f159177db" "20260919085400.816":
-  entity a_register at 1( 0) + 0 on 23;
-  architecture behavioral of a_register at 15( 609) + 0 on 24;
-file . "tb/unit/a_register/tb_a_register.vhd" "6159b3f238beed01170e8b97577cacb85340a85b" "20260919085400.818":
-  entity tb_a_register at 1( 0) + 0 on 25;
-  architecture sim of tb_a_register at 7( 95) + 0 on 26;
-file . "src/alu/alu.vhd" "605d69daa9dcee5ee6b8fb74f6877e9da4684e21" "20260919090437.957":
-  entity alu at 1( 0) + 0 on 31;
-  architecture behavioral of alu at 17( 743) + 0 on 32;
+file . "tb/unit/lfsr/tb_lfsr.vhd" "5b9e3e96867ccb5822cdd401a35249f48e5ba5f9" "20260919093731.159":
+  entity tb_lfsr at 1( 0) + 0 on 41;
+  architecture sim of tb_lfsr at 8( 109) + 0 on 42;
+file . "src/lfsr/lfsr.vhd" "7030dcb6bbd4cc1ee9447647005fcb216fa87518" "20260919093731.156":
+  entity lfsr at 1( 0) + 0 on 39;
+  architecture behavioral of lfsr at 17( 732) + 0 on 40;
 file . "tb/unit/alu/tb_alu.vhd" "399cb30f2af31b8c8778f1cd26025b48543a618f" "20260919090437.960":
   entity tb_alu at 1( 0) + 0 on 33;
   architecture sim of tb_alu at 8( 107) + 0 on 34;
+file . "src/alu/alu.vhd" "605d69daa9dcee5ee6b8fb74f6877e9da4684e21" "20260919090437.957":
+  entity alu at 1( 0) + 0 on 31;
+  architecture behavioral of alu at 17( 743) + 0 on 32;
+file . "tb/unit/a_register/tb_a_register.vhd" "6159b3f238beed01170e8b97577cacb85340a85b" "20260919085400.818":
+  entity tb_a_register at 1( 0) + 0 on 25;
+  architecture sim of tb_a_register at 7( 95) + 0 on 26;
+file . "src/a_register/a_register.vhd" "b962f6d60b68c14169f0950139e5ee4f159177db" "20260919085400.816":
+  entity a_register at 1( 0) + 0 on 23;
+  architecture behavioral of a_register at 15( 609) + 0 on 24;
+file . "tb/unit/program_counter/tb_program_counter.vhd" "d311399ff4ce2bbf9c1a12f84d42e020b35a4f83" "20260919084037.925":
+  entity tb_program_counter at 1( 0) + 0 on 17;
+  architecture sim of tb_program_counter at 8( 131) + 0 on 18;
+file . "src/program_counter/program_counter.vhd" "7703d3bd08c3e9010dc02d488dc90517835956e4" "20260919084037.923":
+  entity program_counter at 1( 0) + 0 on 15;
+  architecture behavioral of program_counter at 14( 464) + 0 on 16;
+file . "src/clock/clock.vhd" "f36054b2fcc392de745bddb883def399323823cf" "20260919083148.291":
+  entity clock at 1( 0) + 0 on 11;
+  architecture behavioral of clock at 13( 355) + 0 on 12;
+file . "tb/unit/clock/tb_clock.vhd" "922c23e1b93fbbfc526e9a6be9e83726a4d09f44" "20260919083148.293":
+  entity tb_clock at 1( 0) + 0 on 13;
+  architecture sim of tb_clock at 7( 85) + 0 on 14;
+file . "src/ring_counter/ring_counter.vhd" "1d6cabdacb4b6228a4ea3861200c71fdae1e410e" "20260919084752.189":
+  entity ring_counter at 1( 0) + 0 on 19;
+  architecture behavioral of ring_counter at 12( 350) + 0 on 20;
+file . "tb/unit/ring_counter/tb_ring_counter.vhd" "b8475ee16fc37e758c8f38dc7be45cbc216f6ca2" "20260919084752.193":
+  entity tb_ring_counter at 1( 0) + 0 on 21;
+  architecture sim of tb_ring_counter at 7( 99) + 0 on 22;
+file . "src/b_register/b_register.vhd" "03c6a28a46ae8f69d74ce42d31f95fc914b770a9" "20260919085436.510":
+  entity b_register at 1( 0) + 0 on 27;
+  architecture behavioral of b_register at 14( 509) + 0 on 28;
+file . "tb/unit/b_register/tb_b_register.vhd" "bdb847708ff4a3e381ee13854c662ff8582e486c" "20260919085436.512":
+  entity tb_b_register at 1( 0) + 0 on 29;
+  architecture sim of tb_b_register at 7( 95) + 0 on 30;
+file . "src/memory/memory.vhd" "9817c9690ebbb711ce2f8746ac8ca33896e72304" "20260919091104.912":
+  entity memory at 1( 0) + 0 on 35;
+  architecture behavioral of memory at 17( 741) + 0 on 36;
+file . "tb/unit/memory/tb_memory.vhd" "cce0dac90f66e8ae78fae795157027b0b2b67154" "20260919091104.915":
+  entity tb_memory at 1( 0) + 0 on 37;
+  architecture sim of tb_memory at 8( 113) + 0 on 38;
